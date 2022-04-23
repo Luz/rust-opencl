@@ -1,0 +1,20 @@
+[package]
+name = "rust-opencl"
+version = "0.1.0"
+authors = ["Luz"]
+description = "A template for OpenCL projects in Rust."
+homepage = "https://github.com/Luz/rust-opencl"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Luz/rust-opencl"
+include = ["/src/**/*.rs", "/src/**/*.cl", "/Cargo.toml", "/LICENSE", "README.md"]
+
+[[bin]]
+name = "rust-opencl"
+path = "src/main.rs"
+
+[dependencies]
+ocl = "^0.19.3"
+image = "^0.24.1"
+colorous = "^1.0.6"
+
